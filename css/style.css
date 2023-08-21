@@ -1,10 +1,25 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00B074;
-    --secondary: #2B9BFF;
-    --light: #EFFDF5;
-    --dark: #2B3940;
+    --primary: #ffe600;
+    --secondary: #cccccc;
+    --light: #ffffff;
+    --dark: #333333;
+    --darkgray: #999999; 
 }
+
+body {
+    background-color: var(--dark); /* Cor de fundo amarela */
+}
+
+h1 img {
+    width: auto;
+    height: 60px;
+}
+
+.custom-icon {
+    color: var(--primary) !important; /* Cor amarela */
+}
+
 
 .back-to-top {
     position: fixed;
@@ -14,6 +29,9 @@
     z-index: 99;
 }
 
+.container-default{
+    background-color: var(--darkgray);
+}
 
 /*** Spinner ***/
 #spinner {
@@ -29,6 +47,10 @@
     opacity: 1;
 }
 
+.spinner-border {
+    border-color: #ffe600; /* Altera a cor do spinner para amarelo */
+    border-right-color: transparent; /* Mantém a parte direita do spinner transparente para criar o efeito de rotação */
+}
 
 /*** Button ***/
 .btn {
@@ -37,9 +59,21 @@
     transition: .5s;
 }
 
-.btn.btn-primary,
+.btn.btn-primary {
+    color: var(--dark);
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e2cc00; /* Escurece a cor de fundo do botão */
+    transition: background-color 0.3s; /* Suaviza a transição de cores */
+}
+
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: var(--dark);
+    background-color: var(--light);
+    border: none;
 }
 
 .btn-square {
@@ -98,7 +132,7 @@
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--darkgray);
 }
 
 @media (max-width: 991.98px) {
@@ -254,11 +288,16 @@
 
 
 /*** Category ***/
+
 .cat-item {
     display: block;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     border: 1px solid transparent;
     transition: .5s;
+}
+
+.cat-item .bi {
+    color: var(--primary); /* Cor amarela */
 }
 
 .cat-item:hover {
@@ -284,44 +323,12 @@
     box-shadow: none;
 }
 
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    transition: .5s;
+.cat-item i{
+    color: var(--dark) !important;
 }
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
+.cat-item p{
+    color: var(--darkgray) !important;
 }
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #FFFFFF !important;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 24px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 5px solid var(--primary);
-    border-radius: 2px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: var(--dark);
-    border-color: var(--primary);
-}
-
 
 /*** Footer ***/
 .footer .btn.btn-social {
@@ -390,4 +397,8 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.espaco-em-branco{
+    height: 120px;
 }
