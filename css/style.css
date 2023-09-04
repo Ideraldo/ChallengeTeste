@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #ffe600;
-    --secondary: #cccccc;
+    --primary: #3bc9f5;
+    --secondary: #38eed6;
     --light: #ffffff;
     --dark: #333333;
     --darkgray: #999999; 
@@ -48,7 +48,7 @@ h1 img {
 }
 
 .spinner-border {
-    border-color: #ffe600; /* Altera a cor do spinner para amarelo */
+    border-color: #38eed6; /* Altera a cor do spinner para amarelo */
     border-right-color: transparent; /* Mantém a parte direita do spinner transparente para criar o efeito de rotação */
 }
 
@@ -66,7 +66,7 @@ h1 img {
 }
 
 .btn-primary:hover {
-    background-color: #e2cc00; /* Escurece a cor de fundo do botão */
+    background-color: #38eed6; /* Escurece a cor de fundo do botão */
     transition: background-color 0.3s; /* Suaviza a transição de cores */
 }
 
